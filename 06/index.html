@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0720</title>
+    <style>
+        h2 {
+            background-color: gainsboro;
+        }
+
+        th,
+        td {
+            height: 30px;
+        }
+
+        th {
+            width: 150px;
+        }
+
+        .tb1 {
+            border: 1px solid;
+        }
+
+        .tb1 td {
+            width: 80px;
+            text-align: center;
+            background-color: beige;
+        }
+
+        .tb2,
+        .tb2 th {
+            background-color: floralwhite;
+        }
+
+        .tb3 {
+            border: 1px solid;
+            background-color: azure;
+        }
+
+        .tb3 td {
+            border: 1px solid;
+            width: 100px;
+            text-align: center;
+            background-color: white;
+        }
+
+        i {
+            color: cornflowerblue;
+        }
+        blockquote{
+            background-color: honeydew;
+            width: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>table</h2>
+    <table>
+        <tr>
+            <th>&lt;table&gt;&lt;/table&gt;</th>
+            <td>table선언</td>
+        </tr>
+        <tr>
+            <th>&lt;thead&gt;&lt;/thead&gt;</th>
+            <td>table의 머릿말</td>
+        </tr>
+        <tr>
+            <th>&lt;th&gt;&lt;/th&gt;</th>
+            <td>td중에서 제목 콘텐츠 (td의 대표격)</td>
+        </tr>
+        <tr>
+            <th>&lt;tbody&gt;&lt;/tbody&gt;</th>
+            <td>인식되는 기준(자리 상관없이 자리 정해짐)</td>
+        </tr>
+        <tr>
+            <th>&lt;tfoot&gt;&lt;/tfoot&gt;</th>
+            <td>인식되는 기준(자리 상관없이 자리 정해짐)</td>
+        </tr>
+        <tr>
+            <th>&lt;tr&gt;&lt;/tr&gt;</th>
+            <td> table의 행 선언 (영역x,style적용x)</td>
+        </tr>
+        <tr>
+            <th>&lt;td&gt;&lt;/td&gt;</th>
+            <td>table의 셀 (열생성)</td>
+        </tr>
+    </table>
+<blockquote>
+    <dl>
+        <dt>✔️<strong>table 태그의 포함관계</strong></dt>
+        <dd>table&gt;tr&gt;tb</dd>
+        <dd>table&gt;tr&gt;th&gt;tb</dd>
+        <dd>table&gt;(colgrop)&gt;thead&gt;tbody&gt;tfoot</dd>
+    </dl>
+</blockquote>
+
+    <hr>
+    <h2>colgroup</h2>
+    <table class="tb3">
+        <caption>
+            <h3>&lt;예제 테이블 tb3 caption&gt;</h3>
+        </caption>
+        <tr>
+            <th scope="row"></th>
+            <td colspan="2"><i>colspan</i></td>
+        </tr>
+        <tr>
+            <td rowspan="3"><i>rowspan</i></td>
+            <td>내용1</td>
+            <td>내용1</td>
+        </tr>
+        <tr>
+            <td>내용2</td>
+            <td>내용2</td>
+        </tr>
+        <tr>
+            <td>내용3</td>
+            <td>내용3</td>
+        </tr>
+    </table>
+    <p></p>
+    <table>
+        <tr>
+            <th>&lt;caption&gt;</th>
+            <td>테이블의 제목이나 설명 (선택사항)</td>
+        </tr>
+        <tr>
+            <th>&lt;colgroup&gt;</th>
+            <td>table의 열 영역선언 : caption요소 다음 마크업! (thead,tbody,tfoot이전에 마크업)</td>
+        </tr>
+        <tr>
+            <th>&lt;col&gt;</th>
+            <td>테이블의 열 그룹</td>
+        </tr>
+        <tr>
+            <th>span</th>
+            <td>태그 속성에 추가하여 확장(병합) <i>rowspan,colspan</i></td>
+        </tr>
+    </table>
+    <p></p>
+    <dl>
+        <dt>
+            <strong>표의 접근성</strong>
+        </dt>
+        <dd>접근성이랑 장애 여부에 상관 없이 정보를 읽을 수 있게 하는 요소를 말한다</dd>
+        <dd>caption: 표의 제목을 알려줌 </dd>
+        <dd>scope: 스크린 리더기에 데이터 방향을 알려줌</dd>
+    </dl>
+    <hr>
+    <h2>form 요소</h2>
+    <fieldset>
+        <legend><h3>legend</h3></legend>
+        <p>fieldset은 네모테두리선로 form요소를 그룹핑, legend(form의 제목)의 사이즈만큼 빈공간이 생김</p>
+        <p>&lt;form action="#" method="post"&gt;</p>
+        <p></p>
+        <table class="tb2">
+            <colgroup>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tr>
+                <th>*action:</th>
+                <td colspan="2">서버주소</td>
+            </tr>
+            <tr>
+                <th>*method방식:</th>
+                <td colspan="2">( get, post )</td>
+            </tr>
+            <tr>
+                <td>🔍get-</td>
+                <td>url창에 노출</td>
+            </tr>
+            <tr>
+                <td>✉️post-</td>
+                <td>url창에 비노출</td>
+            </tr>
+        </table>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend><h3>다양한 input type</h3></legend>
+        <p>ID : <input type="text" value="type=text"></p>
+        <p>PW : <input type="password" value="type=password"></p>
+        <p>검색 : <input type="search" value="type=search"></p>
+        <p>이메일 : <input type="email" value="type=email"> <input type="submit" value="제출"></p>
+        <p>전화 : <input type="tel" value="type=tel"></p>
+        <p>컬러 type=color : <input type="color"></p>
+        <p>수량 type=number(스피너기능) : <input type="number" min="1" max="10" value="1"> 최소1/최대10</p>
+        <p>만족도 type=range : <input type="range" min="0" max="100" value="50">min0~max10% 기본값 50%</p>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend><h3>다양한 input 버튼</h3></legend>
+    <table class="tb1">
+        <tr>
+            <th>속성</th>
+            <th colspan="4">type</th>
+        </tr>
+        <tr>
+            <th>둘 중 하나만</th>
+            <td colspan="2">예<input type="radio" name="answ" checked></td>
+            <td colspan="2">아니오<input type="radio" name="answ"></td>
+        </tr>
+        <tr>
+            <th>중복 선택</th>
+            <td>a<input type="checkbox" name="box1"></td>
+            <td>b<input type="checkbox" name="box2"></td>
+            <td>c<input type="checkbox" name="box3"></td>
+            <td>d<input type="checkbox" name="box4"></td>
+        </tr>
+        <tr>
+            <th>버튼 종류</th>
+            <td><input type="submit" value="전송"></td>
+            <td><input type="reset" value="취소"></td>
+            <td><input type="button" value="나는버튼"></td>
+            <td><button>독립버튼</button></td>
+        </tr>
+    </table>
+    <p>&lt;bottom&gt;버튼은 자주 사용되서 단독 태그로 나옴</p>
+    <p>&lt;input type="image" src="이미지버튼”&gt;</p>
+    <p>&lt;input type="file"&gt;<input type="file"></p>
+</fieldset>
+<blockquote>
+    <h4>✔️ID 와 Class의 차이?</h4>
+    <p>id:기능이 있으며 한문서에 한개(같은이름 한가지)만 가능</p>
+    <p>class:한문서에 여러개 가능</p>
+</blockquote>
+<p></p>
+</body>
+
+</html>

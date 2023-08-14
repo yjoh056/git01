@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cascading(선택자 우선순위)</title>
+    <link rel="stylesheet" href="11.css">
+    <style>
+        /* 아이디100 클래스10 태그1 */
+        /* 111점 */
+        body#bgPage1.bgPage2 {
+            background-color: palevioletred;
+        }
+
+        /* 101점 */
+        body#bgPage1 {
+            background-color: pink;
+        }
+
+        /* class 선택자 점수10 */
+        #bgPage1 {
+            background-color: skyblue;
+        }
+
+        .bgPage2 {
+            background-color: gray;
+        }
+
+        /* 태그 선택자 점수 1 */
+        body {
+            background-color: black;
+            color: white;
+            font-family: "맑은 고딕", dotum, "times New Roman";
+        }
+
+        * {
+            color: red;
+        }
+
+        /* 우선순위 */
+        body * {
+            color: white;
+        }
+
+        /* 선택자우선순위 적용 2점*/
+        body>h1 {
+            color: orange;
+        }
+
+        /* 작성순서 */
+        h1 {
+            color: yellowgreen;
+        }
+
+        /* Q.선택자 우선 운위를 적용하여 글씨를 파란색으로 변경 */
+        /* 최후의 방법 */
+        /* span {
+            color: aquamarine !important;
+        } */
+
+        /* Q.색상을 핑크로 */
+        .bgPage2>.blueText {
+            color: pink
+        }
+        /* 우선순위 높이는 방법 */
+        /* 1+10+1+10=22 */
+        p.bgPage2 span.blueText{
+            color: cornsilk;
+        }
+        /* 1+1+10=12 */
+        p span.blueText{
+            color: purple;
+        }
+        /* 11점 */
+        span.blueText {
+            color: blue;
+        }
+
+        /* ?점 */
+        .blueText{
+            color: cornflowerblue;
+        }
+        /* 1점 */
+        span {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <body id="bgPage1" class="bgPage2">
+        <h1>선택자별 우선 순위 알아보기</h1>
+        <hr />
+        <div>
+            <h2>굴 이야기</h2>
+            <p class="bgPage2">
+                일명 <span class="blueText">석화</span>라고도 하는데 멀리서 보면 따낸 굴조개 껍질이 바위면에 하얗게 붙어있어서 마치 <span
+                    class="blueText">꽃무더기</span>를 연상하게
+                한다. 굴은 <span class="blueText">3대 영양소</span>는 물론 비타민, 미네랄에 이르기까지
+                풍부한 영양분을 함유하고 있어서 완전식품인 우유와 별로 다를 바가 없다.
+            </p>
+        </div>
+    </body>
+</body>
+
+</html>

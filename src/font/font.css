@@ -1,0 +1,24 @@
+@charset 'uft-8';
+
+@font-face {
+    font-family: inso;
+    src: url(./인천교육소통.ttf);
+}
+
+@font-face {
+    font-family: insi;
+    src: url(./인천교육시민.ttf);
+}
+
+@font-face {
+    font-family: inja;
+    src: url(./인천교육자람.ttf);
+}
+@font-face {
+    font-family: inhim;
+    src: url(./인천교육힘찬.ttf);
+}
+
+.so{
+    font-family: inso;
+}

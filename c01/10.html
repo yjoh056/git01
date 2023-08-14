@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box의 5번째 자식요소 선택 */
+        .box>p:nth-child(5) {
+            color: red;
+        }
+
+        /* .box 자식 중 span의 첫번째 */
+        .box>span:nth-of-type(1) {
+            color: white;
+            background-color: palevioletred;
+        }
+
+        /* .box의 4번째 자식요소 글씨색을 핑크로 변경 */
+        .box>span:nth-child(4) {
+            color: pink;
+        }
+
+        /* box의 자식중 p태그의 첫번째 배경색을 노랑으로  */
+        .box>p:nth-of-type(1) {
+            background-color: yellow;
+        }
+
+        /* box 자식 중 첫번쨰 p요소에 마우스 호버시 인접한 span의 배경색 변경 */
+        .box>p:nth-of-type(1):hover+span {
+            background-color: blue
+        }
+
+        .box>p:nth-of-type(1):hover+span:before {
+            content:'🎁';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p> 1. p태그1 </p>
+        <span> 2. p태그2 </span>
+        <p> 3. p태그3 </p>
+        <span> 4. p태그4 </span>
+        <p> 5. p태그5 </p>
+    </div>
+    
+</body>
+
+</html>

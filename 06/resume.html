@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 5px double #5c6dd7;
+            width: 900px;
+            border-spacing: 0;
+            /* border spacing은 사이간격 없애줌 */
+            margin: auto;
+            /* margin auto로 중앙정렬만들기 */
+        }
+        td,
+        th {
+            border: 1px solid #5c6dd7;
+            height: 30px;
+            padding: 5px;
+        }
+        td.center{
+            text-align: center;
+        }
+        .h2 {
+            font-size: 36px;
+        }
+
+        .h80 {
+            height: 80px;
+        }
+
+        .w140 {
+            width: 140px;
+        }
+        .h200{
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- table>(tr>rd*7)*24 -->
+        <tr>
+            <th colspan="3" rowspan="4" class="w140">사진</th>
+            <th colspan="4" class="h80"><span class="h2">이&nbsp;력&nbsp;서</span></th>
+        </tr>
+        <!-- tr1 -->
+        <tr>
+            <th rowspan="2">성명</th>
+            <td rowspan="2" colspan="2" class="center">X X X <sub>(인)</sub></td>
+            <th>주민등록번호</th>
+        </tr>
+        <!-- tr2 -->
+        <tr>
+            <td class="center">20XXX-XXXXXXX</td>
+        </tr>
+        <!-- tr3 -->
+        <tr>
+            <th>생년월일</th>
+            <td colspan="3">20XX년 XX월 XX일</td>
+        </tr>
+        <!-- tr4 -->
+        <tr>
+            <th colspan="3">주소</th>
+            <td colspan="4" class="center">서울시 관악구 봉천동</td>
+        </tr>
+        <!-- tr5 -->
+        <tr>
+            <th colspan="3">호적관계</th>
+            <th>호주와의 관계</th>
+            <td class="center">XXX의 자</td>
+            <th>호주성명</th>
+            <td class="center">XXX</td>
+        </tr>
+        <!-- tr6 -->
+        <tr>
+            <th colspan="3">년 월 일</th>
+            <th colspan="3">학 력 및 경 력 사 항</th>
+            <th>발령청</th>
+        </tr>
+        <!-- tr7 -->
+        <tr>
+            <td class="center">14</td>
+            <td class="center">02</td>
+            <td class="center">13</td>
+            <td colspan="3">졸업</td>
+            <td></td>
+        </tr>
+        <!-- tr8 -->
+        <tr>
+            <td class="center">14</td>
+            <td class="center">04</td>
+            <td class="center">26</td>
+            <td colspan="3">입사</td>
+            <td></td>
+        </tr>
+        <!-- tr9 -->
+        <tr>
+            <td class="center"></td>
+            <td class="center"></td>
+            <td class="center"></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr10 -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr11 -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr12 -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3" class="center">◆자&nbsp;격&nbsp;사&nbsp;항&nbsp;◆</td>
+            <td></td>
+        </tr>
+        <!-- tr13 -->
+        <tr>
+            <td class="center"></td>
+            <td class="center"></td>
+            <td class="center"></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr14 -->
+        <tr>
+            <td class="center"></td>
+            <td class="center"></td>
+            <td class="center"></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr15 -->
+        <tr>
+            <td class="center"></td>
+            <td class="center"></td>
+            <td class="center"></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr16 -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr17 -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr18 -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr19 -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr20 -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr21 -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr22 -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <!-- tr23 -->
+        <tr>
+            <td colspan="7" class="h200 center">위 사항은 사실과 틀림없음을 증명합니다.<br>
+                XXX (인)</td>
+
+        </tr>
+        <!-- tr24 -->
+    </table>
+</body>
+
+</html>

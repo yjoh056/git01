@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오예주 일기장</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./font/font.css">
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
@@ -108,33 +108,30 @@
             line-height: 58px;
             box-sizing: border-box;
             font-weight: 500;
-            padding: 10px;
         }
 
-        .dropDown a:hover .menuDown {
+        .dropDown:hover {
             content: '📪';
         }
 
-        .dropDown a:visited .menuDown{
+        .dropDown:visited {
             content: '📬';
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="window">
-            <div class="topMenu1">
-                <span><a href="https://mango2.notion.site/UI-UX-C-82941a9ba121491abd2734427ef7949a" title="1005호 Notion"
-                        target="_blank">💻</a></span>
-                <span><a href="https://mango2.notion.site/27dcd9ee529f45fabb3142883971790a?v=c81babc5aab649958d0436ae8b38b947"
-                        title="교안" target="_blank">📔</a></span>
-                <a href="http://yj056.dothome.co.kr"><span class="title">✏️ 오예주 일기장</span></a>
-            </div>
-            <div class="menuBar">
-                <a href="#"><span class="dropDown">📫</span></a>
-            </div>
-    </header>
+    <div class="window">
+        <div class="topMenu1">
+            <span><a href="https://mango2.notion.site/UI-UX-C-82941a9ba121491abd2734427ef7949a" title="1005호 Notion"
+                    target="_blank">💻</a></span>
+            <span><a href="https://mango2.notion.site/27dcd9ee529f45fabb3142883971790a?v=c81babc5aab649958d0436ae8b38b947"
+                    title="교안" target="_blank">📔</a></span>
+            <span class="title">✏️ 오예주 일기장</span>
+        </div>
+        <div class="menuBar">
+            <span class="dropDown"><a href="#">📫</a></span>
+        </div>
         <!-- new -->
         <div class="top">
             <h1>오예주 일기장✏️</h1>
@@ -236,18 +233,15 @@
                 <ul class="cssN">
                     <li class="bold"><a href="./c01/index.html">선택자</a></li>
                     <li class="bold"><a href="./c01/13.html">상속관계</a></li>
-                    <li class="bold"><a href="./c06/study1.html">float</a></li>
                     <li class="bold"><a href="./newCre/01.html">mycard</a></li>
                     <li class="blod"><a href="./newCre/02.html">flex-layout</a></li>
                 </ul>
             </fieldset>
         </div>
         <!-- //CSS -->
-        <footer>
-            <p class="butt"><a
-                    href="https://magic-nail-d05.notion.site/UI-UX-web-class-230705-a5d1dc0c8a314854bbdf4a2d97c90999?pvs=4"
-                    target="_blank"><img src="./img-test/images/download.png" alt="노션 필기장" width="300"></a></p>
-        </footer>
+        <p class="butt"><a
+                href="https://magic-nail-d05.notion.site/UI-UX-web-class-230705-a5d1dc0c8a314854bbdf4a2d97c90999?pvs=4"
+                target="_blank"><img src="./img-test/images/download.png" alt="노션 필기장" width="300"></a></p>
     </div>
 </body>
 

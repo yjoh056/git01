@@ -1,0 +1,19 @@
+body {
+    text-align: center;}
+
+a {
+        background-color: black;
+        color: white;
+    }
+h1{
+    background-color: #663399;
+    color: white;
+    font-size: 28px;
+    padding: 10px;
+    }
+    h2{
+        background-color: red;
+        color: white;
+        font-size: 9px;
+        padding: 5px;
+    }

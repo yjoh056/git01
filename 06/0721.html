@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from2</title>
+    <style>
+        dl {
+            border: 1px solid;
+            width: 600px;
+        }
+
+        dd {
+            background-color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>form 속성</h1>
+    <h2>name/id</h2>
+    <input type="text" value="텍스트를 입력하세요" name="userText" id="userText">
+    <p>&lt;input type="text" <b>value</b>="텍스트를 입력하세요" <b>name</b>="userText" <b>id</b>="userText"&gt;</p>
+    <dl>
+        <dt><b> value</b></dt>
+        <dd>값(사용자가 동적으로 바꾸는 데이터가 들어옴)</dd>
+        <dd>JAVASCRIPT에서는 value값을 가져올 수 있다.</dd>
+    </dl>
+    <dl>
+        <dt><b> name</b></dt>
+        <dd>데이터 베이스에 저장되는 필드명(데이터 전송 관련/백엔드용 식별자)</dd>
+    </dl>
+    <dl>
+        <dt><b> id</b></dt>
+        <dd>디자인요소관련(프론트용 식별자)</dd>
+    </dl>
+    <hr>
+    <h2>textarea / select</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>회원가입</legend>
+            <p>이름:<input type="text" name="idName" placeholder="placeholder"><input type="text" name="idName"
+                    value="value"></p>
+            <p>가입 목적:<br>
+                <textarea name="memo" id="memo" cols="50" rows="10">텍스트입력</textarea>
+            </p>
+            <p>생년월일:
+                <select name="birth1" id="birth1">
+                    <option>-년도-</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                </select>
+                <select name="birth2" id="birth2">
+                    <option>-월-</option>
+                    <option value="jar">1월</option>
+                    <option value="feb">2월</option>
+                    <option value="mar">3월</option>
+                    <option value="apr">4월</option>
+                    <option value="may">5월</option>
+                    <option value="jun">6월</option>
+                    <option value="july">7월</option>
+                    <option value="agu">8월</option>
+                </select>
+                <select name="birth3" id="birth3">
+                    <option>-일-</option>
+                    <option value="d1">01</option>
+                    <option value="d2">02</option>
+                    <option value="d3">03</option>
+                    <option value="d4">04</option>
+                    <option value="d5">05</option>
+                </select>
+            </p>
+            <h4>placeholder와 value의 차이</h4>
+            <p>
+                placeholder는 가이드 텍스트 역할<br>
+                value는 정보를 가져오는 역할
+            </p>
+        </fieldset>
+    </form>
+    <h2>ladel</h2>
+    <p>* label요소는 인터페이스 항목의 설명을 나타냅니다.</p>
+    <p>label for를 택스트에 적용하고 input 속성에 id로 설정하기</p>
+    <table>
+        <colgroup>
+            <col>
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <th scope="row">
+                    <label for="id">아이디</label>
+                </th>
+                <td>
+                    <input type="text" id="id" title="아이디입력" placeholder="아이디를 입력하세요">
+                    <!-- value는 필수가 아니라 필요시 -->
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <label for="email">이메일</label>
+                </th>
+                <td>
+                    <input type="email" id="email" title="이메일 입력">@<input type="text" title="이메일 입력">
+                    <!-- value는 필수가 아니라 필요시 -->
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <!-- label은 form태그의 요소를 알려줌 -->
+                    <label for="hp">핸드폰 번호</label>
+                </th>
+                <td>
+                    <select name="hp" id="hp">
+                        <option>선택</option>
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                    </select> -
+                    <input type="tel" id="hp2" title="핸드폰국번입력 입력"> - <input type="text" title="핸드폰번호 입력">
+                    <!-- value는 필수가 아니라 필요시 -->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <p>* label로 묶인 텍스트는 선택버튼과 함께 눌리게된다. 작은 요소 선택에 좋음</p>
+        <fieldset>
+            <!-- <label for="yes">동의</label> -->
+            <label for="yes">예(label for="yes")</label>
+            <!-- label로 묶인 텍스트는 선택버튼과 함께 눌리게된다.작은 요소에서 좋음 -->
+            <input type="radio" id="yes" name="read" checked>/
+            <label for="no">아니오(label for="no")</label>
+            <input type="radio" id="no" name="read">
+        </fieldset>
+        <!-- redio버튼은 스크린리더에 읽힐게 없다.그럴때 label이 알려줌 -->
+    </div>
+
+    <div>
+        <p>* 체크박스가 하나일때는 label속성없이 쓸 수 있다</p>
+        <label>수영<input type="checkbox" name="hobby1"></label>
+        <label>스키<input type="checkbox" name="hobby2"></label>
+        <label>발레<input type="checkbox" name="hobby3"></label>
+    </div>
+</body>
+
+</html>

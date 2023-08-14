@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li::marker {
+            font-size: 15px;
+            color: black;
+        }
+
+        * {
+            list-style-type: none;
+        }
+
+        .contant,
+        .contant2 {
+            width: 150px;
+        }
+
+        ul li.lTitle {
+            list-style-type: none;
+            border-bottom: 1px solid gray;
+            border-top: 5px solid rgb(0, 130, 156);
+            display: inline-block;
+            vertical-align: bottom;
+            padding-top: 20px;
+        }
+
+        .contant li:hover {
+            color: cornflowerblue;
+        }
+
+        .contant :nth-of-type(8) {
+            border-bottom: 5px solid rgb(0, 130, 156);
+            padding-bottom: 20px;
+        }
+
+        .contant>li {
+            border-left: 5px solid rgb(0, 130, 156);
+            border-right: 5px solid rgb(0, 130, 156);
+            border-collapse: collapse;
+            width: 150px;
+            padding-top: 3px;
+            padding-bottom: 2px;
+            padding-left: 20px;
+            font-size: 12px;
+            color: dimgray;
+        }
+
+        ul li.lTitle2 {
+            list-style-type: none;
+            border-top: 5px solid rgb(255, 56, 149);
+            display: inline-block;
+            vertical-align: bottom;
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+
+        .contant2 :nth-of-type(5) {
+            border-bottom: 5px solid rgb(255, 56, 149);
+            padding-bottom: 20px;
+        }
+
+        .contant2>li {
+            border-left: 5px solid rgb(255, 56, 149);
+            border-right: 5px solid rgb(255, 56, 149);
+            border-collapse: collapse;
+            width: 150px;
+            padding-top: 1px;
+            padding-left: 20px;
+            font-size: 12px;
+            color: dimgray;
+            color: white;
+        }
+
+        .contant2 span[title$="레시피"] {
+            background-color: green;
+        }
+
+        .contant2 span[title$="장터"] {
+            background-color: blue;
+        }
+
+        .contant2 span[title$="게시판"] {
+            background-color: red;
+        }
+
+        strong {
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="contant">
+            <li class="lTitle"><img src="./images/ctegory.png" alt="카테고리"></li>
+            <li><strong>밥/죽/면</strong></li>
+            <li>매일 반찬</li>
+            <li>국/찌게/전골</li>
+            <li>가족/초대요리</li>
+            <li>소스/양념장</li>
+            <li>간식/음료</li>
+            <li>기타</li>
+        </ul>
+    </div>
+    <div>
+        <ul class="contant2">
+            <li class="lTitle2"><img src="./images/ctegory_text.png" alt="게시판"></li>
+            <li><span title="자유게시판">&nbsp;자유 게시판&nbsp;</span></li>
+            <li><span title="회원 장터">&nbsp;회원 장터&nbsp;</span></li>
+            <li><span title="나만의 레시피">&nbsp;나만의 레시피&nbsp;</span></li>
+            <li><span title="불후의 레시피">&nbsp;불후의 레시피&nbsp;</span></li>
+        </ul>
+    </div>
+</body>
+
+</html>

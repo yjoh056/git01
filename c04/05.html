@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지 고정</title>
+    <style>
+        p{
+            padding: 20px;
+        }
+        /* parallax scrolling */
+        .bg_fixed{
+            min-height: 200px;
+            background-image: url(./img/bg_fixed.png);
+            background-position: center;
+            background-attachment: scroll;
+        }
+        .btm{
+            min-height: 200px;
+            background-color: #595;
+        }
+    </style>
+</head>
+<body>
+    <h1>background-attachment</h1>
+    <!-- 스크롤시 배경이미지 고정여부 -->
+    <p>패션의 완성은 자연이다.<br>멋지고도 순수한 자연만큼 패셔너블한게 있을까! <br>강렬하고 화려해서가 아니라 적절한 시기와 적절한 장소, 그리고 풍요로운 볼거리를 제공해주고 있지 않나.<br>
+        조심스럽게 살펴보면 자연이 보여주고 있는 모든것이 옷이고 장신구, 신발들이다..</p>
+        <p class="bg_fixed"></p>
+        <p class="btm">최고의 패션, 자연을 팝니다... </p>
+</body>
+</html>

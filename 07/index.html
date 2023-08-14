@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>음악 삽입하기</h1>
+    <div>
+        <h3>audio + controls</h3>
+        <audio src="./media/media/applause.mp3" controls></audio>
+    </div>
+    <div>
+        <h3>
+            접근성 문제 해결하기(브라우저별)
+            audio controls
+        </h3>
+        <audio controls>
+            <source src="./media/media/applause.mp3">
+            <source src="./media/media/applause.ogg">
+            <source src="./media/media/applause.wav">
+        </audio>
+    </div>
+    <h2>동영상 삽입하기</h2>
+    <div>
+        <video width="400px" controls>
+        <source src="./media/media/heartattack.mp4">
+            <track src="./media/media/subtitle2_ko.vtt" kind="subtitles" srclang="ko" label="한국어" default>
+        </video>
+    </div>
+</body>
+
+</html>

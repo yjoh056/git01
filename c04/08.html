@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경의 영역</title>
+    <style>
+        div {
+            border: 10px double darkblue;
+            padding: 30px;
+            margin-bottom: 20px;
+            width: 600px;
+            background-color: aquamarine;
+        }
+
+        .clip1 {
+            background-clip: border-box;
+        }
+
+        .clip2 {
+            background-clip: padding-box;
+        }
+
+        .clip3 {
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>background-clip</h1>
+    <div class="clip1">It's impossible not only starting good but also keeping it firm!!</div>
+    <div class="clip2">It's impossible not only starting good but also keeping it firm!!</div>
+    <div class="clip3">It's impossible not only starting good but also keeping it firm!!</div>
+</body>
+
+</html>

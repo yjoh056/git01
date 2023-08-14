@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 700px;
+  background-color: #eee;
+  border: 1px solid #222;
+  margin-bottom: 30px;
+}
+.box {
+  padding: 5px 45px;
+  margin: 5px;
+  width: 80px;
+  background-color: #222;
+}
+p {
+  color: #fff;
+  text-align: center;
+}

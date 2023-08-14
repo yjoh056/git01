@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my</title>
+    <style>
+        .fl{
+            float:left;
+        }
+        .cf::after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .wrap{
+            background-color: rgb(212, 132, 132);
+            width: 600px;
+            margin: auto;
+        }
+        main{
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+        }
+        nav,aside{
+            width: 100px;
+            background-color: bisque;
+            height: 100%;
+        }
+        section{
+            width: 400px;
+        }
+        header,footer{
+            height: 50px;
+        }
+        
+        h1{
+            width: 100px;
+            height: 100%;
+            background-color: black;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header><h1>logo</h1></header>
+    <main class="cf">
+        <nav class="fl">nav</nav>
+        <section class="fl">section</section>
+        <aside class="fl">aside</aside>
+    </main>
+    <footer>footer</footer>
+</div>
+</body>
+</html>

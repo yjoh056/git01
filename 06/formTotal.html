@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예약문의</title>
+</head>
+
+<body>
+    <h1>예약문의</h1>
+    <form action="#" method="post">
+        <p>작성자: <input type="text" name="userName" placeholder="작성자를 입력하세요" required="required" autocomplete="on"></p>
+        <!-- required="required" 필수 입력 속성 -->
+        <p><input type="password" name="userPWD" value="userPWD"></p>
+        <!-- name:서버에 참조되는 값 (데이터베이스 필드값) -->
+        <!-- value:서버에 저장되는 값(데이터베이스 데이터) -->
+        <!-- id:화면 디자인용 식별자 -->
+        <p>
+            주민등록번호: <input type="text" name="userIDNUM" pattern="\d{6}-\d{7]}">
+            <!-- 정규식(JAVASCRIT) :특정한 규칙을 가지는 문자열의 집합 -->
+            <!-- patten : 값의 규칙검사 -->
+            <!-- \d는 정수 숫자를 의미 {}안의 숫자는 자릿수 : 컴퓨터 언어-->
+        </p>
+        <p>
+            email: <input type="email" name="userEmail" autocomplete="on" autofocus="autofocus">
+            <!-- autocomplete 자동완성 -->
+            <!-- autofocus 제일 중요한 폼요소에 커서가 가있음 -->
+        </p>
+        <p>
+            연락처: <input type="tel" name="userPhone" autocomplete="off">
+        </p>
+        <p>투숙날짜: <input type="date" name="userDate"></p>
+        <p>투숙시간: <input type="datetime"></p>
+        <p>년월<input type="month"></p>
+        <p>주<input type="week"></p>
+        <p>시분<input type="time"></p>
+        <p>color: <input type="color"></p>
+        <p>인원: <input type="number"></p>
+        <p>검색: <input type="search"></p>
+        <p>url: <input type="url"></p>
+        <p>별점: <input type="range"></p>
+        <p>사진: <input type="file"></p>
+        <p>사진여러장: <input type="file" multiple="multiple"></p>
+        <!-- multiple 여러장 선택 -->
+
+        <ul>
+            <li><label for="seralNum">시리얼번호입력</label><input type="text" id="seralNum">
+                <!-- label과 input이 떨어져있을때 for와 id로 연결시켜줌 -->
+                <input type="button" value="이전">
+                <input type="button" value="다음" disabled>
+            </li>
+            <!-- disabled : 사용불가 액션은 자바스크립트-->
+            <!-- readonly : 텍스트 읽기전용 -->
+            <li>
+                <label for="book">선택한 책: </label>
+                <input type="text" id="book" value="반응형웹" readonly>
+                <label for="number">수량: </label>
+                <input type="number" id="number" value="1">
+            </li>
+        </ul>
+        <hr>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

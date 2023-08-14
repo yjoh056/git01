@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <p><input type="text" placeholder="아이디를 입력"></p>
+        <p><textarea name="qna" id="qna" cols="80" rows="10">질문내용입력</textarea></p>
+    </form>
+    <div>
+        취미
+        <label><input type="checkbox" name="hobby" checked>
+        낚시</label>
+        <label><input type="checkbox" name="hobby">독서</label>
+        <label><input type="checkbox" name="hobby" checked>운동</label>
+    </div>
+    <div>
+        취미<label><input type="radio" name="hobby">낚시</label>
+        <label><input type="radio" name="hobby" checked>독서</label>
+        <label><input type="radio" name="hobby">운동</label>
+    </div>
+    <p></p>
+    <hr>
+    <h1>회원 가입을 환영합니다</h1>
+    <fieldset>
+        <legend>사용자 정보</legend>
+        <ul>
+            <li>아이디<input type="text" name="userId"></li>
+            <li>이메일<input type="email" name="userEmail"></li>
+            <li>비밀번호<input type="password" name="userPw"></li>
+            <li>비밀번호 확인<input type="password" name="userPw" required="required"></li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+        <label><input type="radio">메일 수신</label>
+        <label><input type="radio" checked>메일 수신 안 함</label>
+    </fieldset>
+    <input type="button" value="가입하기"><input type="reset" value="취소">
+    <div>
+        <a href="../07/q3-asw.html">문제풀이(1)</a>
+        <a href="../07/q4-asw.html">문제풀이(2)</a>
+    </div>
+</body>
+</html>

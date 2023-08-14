@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원형그라데이션 중심점바꾸기</title>
+    <style>
+        p {
+            padding: 60px;
+        }
+
+        .rg1 {
+            background: radial-gradient(closest-side at 35% 35%, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 32%, rgba(252,176,69,1) 100%);
+        }
+
+        .rg2 {
+            background: radial-gradient(closest-corner at 35% 35%, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 32%, rgba(252,176,69,1) 100%);
+        }
+
+        .rg3 {
+            background: radial-gradient(closest-side at 35% 35%, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 32%, rgba(252,176,69,1) 100%);
+        }
+
+        .rg4 {
+            background: radial-gradient(closest-corner at 35% 35%, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 32%, rgba(252,176,69,1) 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>## radial-gradient</h1>
+    <p class="rg1"></p>
+    <p class="rg2"></p>
+    <p class="rg3"></p>
+    <p class="rg4"></p>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .topBox {
+            width: 700px;
+            height: 400px;
+            background-color: gainsboro;
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+        div .conts1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        div .conts2 {
+            float: right;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .cf::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topBox cf">
+        <div class="conts1"></div>
+        <div class="conts2"></div>
+    </div>
+</body>
+
+</html>

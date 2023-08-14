@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(img/bg_grid.png);
+        }
+
+        body {
+            background: url(./img/bg_grid.png);
+        }
+
+        p {
+            background-color: rgba(255, 255, 0.5);
+            border: 10px solid rgba(0, 0, 0, .5);
+            width: 600px;
+            height: 100px;
+            padding: 30px;
+            margin-bottom: 10px;
+            /* 넓이 680 높이180 */
+        }
+
+        .sizing {
+            box-sizing: content-box;
+            box-sizing: border-box;
+        }
+
+        ul.sizing_list {
+            width: 500px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        ul.sizing_list li {
+            list-style: none;
+            width: 25%;
+            background-color: rgba(151, 151, 151, 0.5);
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            float: left;
+        }
+        ul.sizing_list li a{
+            text-decoration: none;
+            color: #fff;
+        }
+        ul.sizing_list li:nth-child(odd){
+            background: rgba(145, 230, 245, 0.5);
+        }
+        /* odd 홀수 even 짝수 */
+        /* ul.sizing_list li:nth-child(2n){
+            background: rgba(102, 143, 150, 0.5);
+        } */
+    </style>
+</head>
+
+<body>
+    <p>It's impossible not only starting good but also keeping it firm!!</p>
+    <p class="sizing">It's impossible not only starting good but also keeping it firm!!</p>
+    <ul class="sizing_list">
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Custommer</a></li>
+        <li><a href="#">Community</a></li>
+    </ul>
+</body>
+
+</html>

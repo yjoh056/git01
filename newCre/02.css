@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    background: fixed;
+}
+
+header {
+    display: flex;
+    height: 60px;
+    line-height: 60px;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    align-items: center;
+    margin-bottom: auto;
+}
+
+#sitemap {
+    width: 150px;
+    height: 40px;
+    margin-left: auto;
+}
+
+.logo {
+    margin-left: 40px;
+    margin-right: auto;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+}
+
+.menu1 {
+    margin-left: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    min-width: 800px;
+    align-content: space-between;
+
+}
+
+
+.nav {
+    min-width: 200px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-right: auto;
+    flex: 0;
+    /* flex: 1 1 0 */
+    background-color: #ececec;
+    text-align: center;
+}
+
+
+.nav li {
+    font-size: 24px;
+    font-weight: 700px;
+}
+
+.nav li::before{
+    content: '🔹';
+}
+
+.nav a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    flex: auto;
+    overflow-y: scroll;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 800px;
+}
+
+.txtBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 800px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.txt1 {
+    width: 400px;
+    height: auto;
+}
+
+.txt2 {
+    width: 400px;
+    height: auto;
+}
+
+footer {
+    margin-top: auto;
+    min-height: 100px;
+    align-content: center;
+    background-color: rgb(43, 43, 43);
+    padding: 40px 180px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상속관계</title>
+    <style>
+        * {
+            /* font명 - 또는 띄어쓰기가 있는 폰트이름은 ""쓰기  */
+            font-family: "맑은 고딕", 바탕, "Times New Roman";
+        }
+
+        /* div에는 글자가 없지만 하위 요소 글자에 적용 text는 상속yes*/
+        #cook {
+            border: 1px solid blue;
+            color: #7b4646;
+            font-size: 12px;
+            width: 600px;
+            padding: 30px;
+        }
+
+        /* initial 기존 설정으로 초기화 글로벌값, width는 상속no*/
+        #cook p {
+            font-size: initial;
+            line-height: 150%;
+            width: 600px;
+            border: initial;
+            text-align: justify;
+        }
+
+        #cook p span {
+            font-weight: bold;
+            color: #0037ff;
+            /* inherit 상속 */
+            border: inherit;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>속성 값의 상속 관계 알아보기</h1>
+    <div id="cook">
+        <h2>상속 이야기</h2>
+        <p>html문서에 <span>font-family를 쓸 때 </span>font-family: "맑은 고딕", 바탕, "Times New Roman";
+        폰트 이름에 <span>띄어쓰기 유무에 따라""</span>로 구분한다. <br>
+        <span>div</span>는 하위 글자 속성을 <span>상속</span>한다.<br>
+        기존 설정인 글로벌값으로 초기화하려면 <span>initial</span>을 쓴다.<br>
+        상위 부모요소를 상속하려면 <span>inherit</span>를 쓴다.</p>
+    </div>
+</body>
+
+</html>

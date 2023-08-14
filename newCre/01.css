@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #444;
+}
+
+.wrap {
+    width: 414px;
+    height: 736px;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 40px;
+    padding-top: 40px;
+    margin-top: 40px;
+    margin-left: 40px;
+    overflow: hidden;
+}
+
+.h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 32px;
+    padding-left: 40px;
+    color: #444;
+    font-family: suite;
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 4px;
+}
+
+.tag {
+    width: 30px;
+    height: 15px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background: #BBDAFF;
+    color: #000;
+    font-family: SUITE;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.1px;
+    margin-top: 24px;
+}
+
+.contaner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    width: 414px;
+    height: 360px;
+    margin-top: 24px;
+}
+
+.card {
+    display: flex;
+    width: 240px;
+    height: 360px;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 3px 5px 6px 1px rgb(48 48 48 / 48%);
+}
+
+.first {
+    max-width: 240px;
+    margin-right: 10px;
+}
+
+.sed {
+    max-width: 240px;
+}
+
+
+.img1 {
+    height: 260px;
+    background: url(./img/picture1.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.img2 {
+    height: 260px;
+    background: url(./img/picture2.png) no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+.text {
+    width: 200px;
+    padding: 20px 20px 27.42px 20px;
+}
+
+.name {
+    height: 14px;
+    color: #000;
+    font-family: SUITE;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+}
+
+.box {
+    margin-top: 11px;
+    height: 32px;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: SUITE;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}

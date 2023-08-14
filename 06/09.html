@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label</title>
+</head>
+<body>
+    <h1>label 요소</h1>
+    <form action="#" method="post">
+        <table>
+            <caption>회원가입양식</caption>
+            <colgroup>
+                <col>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        <label for="id">아이디</label>
+                    </th>
+                    <td>
+                        <input type="text" id="id" title="아이디입력" placeholder="아이디를 입력하세요">
+                        <!-- value는 필수가 아니라 필요시 -->
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="pw">비밀번호</label>
+                    </th>
+                    <td>
+                        <input type="password" id="pw" title="비밀번호 입력" placeholder="비밀번호를 입력하세요">
+                        <!-- value는 필수가 아니라 필요시 -->
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="{pw_r}">비밀번호 재입력</label>
+                    </th>
+                    <td>
+                        <input type="password" id="pw_r" title="비밀번호 입력" placeholder="비밀번호를 재입력하세요">
+                        <!-- value는 필수가 아니라 필요시 -->
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="email">이메일</label>
+                    </th>
+                    <td>
+                        <input type="email" id="email" title="이메일 입력">@<input type="text" title="이메일 입력">
+                        <!-- value는 필수가 아니라 필요시 -->
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <!-- label은 form태그의 요소를 알려줌 -->
+                        <label for="hp">핸드폰 번호</label>
+                    </th>
+                    <td>
+                        <select name="hp" id="hp">
+                            <option>선택</option>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                        </select> -
+                        <input type="hp" id="hp2" title="핸드폰국번입력 입력"> - <input type="text" title="핸드폰번호 입력">
+                        <!-- value는 필수가 아니라 필요시 -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div>
+        <input type="submit" value="회원가입">
+        <input type="reset" value="취소">
+    </div>
+    <div>
+        <!-- <label for="yes">동의</label> -->
+        예
+        <!-- label로 묶인 텍스트는 선택버튼과 함께 눌리게된다.작은 요소에서 좋음 -->
+        <input type="radio" id="yes" name="read" checked>
+        <label for="no">아니오</label>
+        <input type="radio" id="no" name="read">
+        <!-- redio버튼은 스크린리더에 읽힐게 없다.그럴때 label이 알려줌 -->
+    </div>
+    <!-- 체크박스가 하나일때는 label속성없이 쓸 수 있다 -->
+    <lable> 수영 <input type="checkbox" name="hobby1"></lable>
+    <lable> 스키 <input type="checkbox" name="hobby2"></lable>
+    <lable> 발레 <input type="checkbox" name="hobby3"></lable>
+</body>
+</html>

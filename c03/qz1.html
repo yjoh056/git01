@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before 다시하기</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        h1 {
+            line-height: 5px;
+            padding-bottom: 30px;
+        }
+
+        p {
+            width: 500px;
+            text-align: justify;
+            text-transform: lowercase;
+            text-indent: 15px;
+        }
+
+        p::before {
+            display: block;
+            width: 50px;
+            height: 50px;
+            content: ' ';
+            background: url(./img/icon-book.png);
+            background-size: cover;
+        }
+
+        p::after {
+            content: '요거추가';
+            color: red;
+            font-size: 25px;
+            font-weight: 500;
+            text-shadow: 1px 0px 0 #f7e2ca;
+            text-shadow: 2px 3px 3px rgb(214, 0, 0);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>영상과 인쇄의 공존</h1>
+    <p>
+        영상의 발달로 인해 인쇄는 곧 사라질 것처럼 생각했지만 예상을 뒤집고 인쇄물들은 점점 고급화를 향해 달리고 있다. e-book의 출현과 함께 서점에서 책을 사모으는 취미는 여전하고 FACEBOOK의
+        도전에도
+        불구하고 많은 사람들은 책장을 손으로 넘기고 있다.
+        좋은 인쇄물을 갖는 것은 큰 즐거움이며 스마트폰을 두드리는 손가락에 의해 흥미로운 책장도 계속 넘어간다.
+    </p>
+    <a href="./quiz1.html">문제풀이</a>
+</body>
+
+</html>

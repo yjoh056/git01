@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYle>
+        li {
+            list-style: none;
+            margin: 5px;
+        }
+
+        li a {
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            color: #cdf40a;
+            display: block;
+            padding-left: 30px;
+            background: #999 url('./img/bg_sprite.png') no-repeat;
+            background-size: 28px;
+
+            font-size: 25px;
+            /* background 축약은 5가지를 포함하고 총괄한다. 앞에 단일 속성으로 지정해도 축약속성으로만 적용 */
+        }
+
+        .lnb li:nth-child(1) a {
+            background-position: 0px 0px;
+
+        }
+
+        .lnb li:nth-child(1):hover a {
+            background-position: 0px -54px;
+        }
+
+        .lnb li:nth-child(2) a {
+            background-position-y: -54px;
+        }
+
+        .lnb li:nth-child(3) a {
+            background-position-y: -107px;
+        }
+
+        .lnb li:nth-child(4) a {
+            background-position-y: -54px;
+            transition: all 0.5s;
+        }
+
+        .lnb li:nth-child(4) a:hover {
+            background-position: 0px -162px;
+        }
+    </STYle>
+
+</head>
+
+<body>
+    <h1>sprite image</h1>
+    <blockquote>아이콘의 이미지를 한번만 업로드하여 로딩속도를 빠르게</blockquote>
+    <ul class="lnb">
+        <li><a href="#">Theater</a></li>
+        <li><a href="#">Secret Garden</a></li>
+        <li><a href="#">Concert Hall</a></li>
+        <li><a href="#">Animal Farm</a></li>
+    </ul>
+</body>
+
+</html>

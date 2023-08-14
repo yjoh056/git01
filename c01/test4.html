@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            padding-left: 20px;
+        }
+
+        li::marker {
+            font-size: 15px;
+            color: black;
+        }
+
+        .contant,
+        .contant2 {
+            width: 150px;
+        }
+
+        ul li.lTitle {
+            list-style-type: none;
+            border-bottom: 1px solid gray;
+            border-top: 5px solid rgb(0, 130, 156);
+            display: inline-block;
+            vertical-align: bottom;
+            padding-top: 20px;
+        }
+
+        .contant :nth-of-type(8) {
+            border-bottom: 5px solid rgb(0, 130, 156);
+        }
+
+        .contant>li {
+            border-left: 5px solid rgb(0, 130, 156);
+            border-right: 5px solid rgb(0, 130, 156);
+            border-collapse: collapse;
+            width: 150px;
+            padding-top: 3px;
+            padding-bottom: 2px;
+            font-size: 12px;
+        }
+
+        ul li.lTitle2 {
+            list-style-type: none;
+            border-top: 5px solid rgb(255, 56, 149);
+            display: inline-block;
+            vertical-align: bottom;
+            padding-top: 20px;
+        }
+
+        .contant2 :nth-of-type(5) {
+            border-bottom: 5px solid rgb(255, 56, 149);
+        }
+
+        .contant2>li {
+            border-left: 5px solid rgb(255, 56, 149);
+            border-right: 5px solid rgb(255, 56, 149);
+            border-collapse: collapse;
+            width: 150px;
+            padding-top: 3px;
+            padding-bottom: 2px;
+            font-size: 12px;
+        }
+
+        li,:link {
+            color: dimgray;
+        }
+
+        li:hover,
+        :active {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="contant">
+            <li class="lTitle"><img src="./images/ctegory.png" alt="카테고리"></li>
+            <li><a href="#">밥/죽/면</a></li>
+            <li><a href="#">매일 반찬</a></li>
+            <li><a href="#">국/찌게/전골</a></li>
+            <li><a href="#">가족/초대요리</a></li>
+            <li><a href="#">소스/양념장</a></li>
+            <li><a href="#">간식/음료</a></li>
+            <li><a href="#">기타</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="contant2">
+            <li class="lTitle2"><img src="./images/ctegory_text.png" alt="게시판"></li>
+            <li><a href="#">자유 게시판</a></li>
+            <li><a href="#">회원 장터</a></li>
+            <li><a href="#">나만의 레시피</a></li>
+            <li><a href="#">불후의 레시피</a></li>
+        </ul>
+    </div>
+    <p><a href="./reTest4.html">Re Try &ges;</a></p>
+</body>
+
+</html>

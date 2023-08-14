@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: darksalmon;
+        }
+        /* a태그 링크 선택 */
+        a {
+            color: dodgerblue;
+        }
+
+        /* 링크가 걸린상태 */
+        a:link {
+            color:yellow;
+        }
+
+        /* 방문했던 링크 */
+        a:visited {
+            color: green;
+        }
+
+        /* 마우스 호버 (많이씀) */
+        a:hover {
+            color: red;
+        }
+
+        /* 마우스 왼쪽버튼을 누르고 있을때 */
+        a:active {
+            color: pink
+        }
+        .menu:hover{
+            background-color: black;
+            color: white;
+        }
+        .menu:active {
+            color: pink
+        }
+        /* focus :(마우스가없을때, 접근성 기법) 입력상태로 바뀌었을때*/
+        input:focus{
+            background-color: #090;
+            border: 5px dashed #000;
+            color: white;
+            font-size: 24px;
+        }
+        input:hover{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li> <a href="#COMPANY">COMPANY</a></li>
+        <li> <a href="#PRODUCT">PRODUCT</a></li>
+        <li> <a href="#SERVICE">SERVICE</a></li>
+        <li> <a href="#CUSTOMER">CUSTOMER</a></li>
+        <li> <a href="#COMMUNITY">COMMUNITY</a></li>
+    </ul>
+    <a href="#menu" class="menu" tabindex="-1">메뉴</a>
+    <hr>
+    <h2 class="menu" tabindex="0">동적 가상 요소 선택자</h2>
+    <hr>
+    <h3>로그인</h3>
+    <form action="#" method="post">
+        <fieldset>
+            <label> 아이디 : <input type="text"></label><br>
+            <label> 비밀번호 : <input type="password"></label>
+            <br>
+            <button>로그인</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* tag selector */
+        p {
+            color: red;
+        }
+
+        /* id selector */
+        #menu {
+            color: blue;
+        }
+
+        /* class selector */
+        .junsu {
+            color: green;
+        }
+
+        /* asterrisk */
+        * {
+            /* 초기화코드 */
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.75;
+            /* 글자크기의 1.75배 */            
+            list-style: none;
+            /* lisr-style는 리스트 속성 적용 (축약형을 많이씀)*/
+        }
+        /* 자손선택자 */
+        ul li{
+            font-size: 24px;
+        }
+        body p{
+            background-color: yellow;            
+        }
+        li h3{
+            background-color: grey;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- tag selector 태그선택자 -->
+    <p>
+        태그선택자Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quod vero nulla explicabo quas recusandae quaerat
+        aliquid rem qui dolores velit nesciunt, excepturi pariatur eligendi minus nemo. Accusamus, quo aperiam.
+    </p>
+    <!-- id selector 아이디선택자 -->
+    <!-- u1#menu>li -->
+    <h2>아이디선택자</h2>
+    <u1 id="menu">
+        <li>아이디 선택자</li>
+        <li>아이디는 중복x</li>
+        <li>아이디는 문서에 하나만</li>
+    </u1>
+    <!-- class selector 클래스선택자 -->
+    <!-- .junsu -->
+    <div class="junsu">
+
+    </div>
+    <!-- h1.junsu -->
+    <h1 class="junsu">클래스선택자/ 문서내 중복사용o
+    </h1>
+    <div>
+        전체선택자 Lorem2, ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur? Optio eos ipsa sunt magnam rerum
+        rem ab obcaecati ut, voluptatibus et laudantium libero odio quis dolorem officia aliquid nobis.
+    </div>
+    <hr>
+    <ul>
+        <li><h3>하위선택자</h3></li>
+        <li>Lorem ipsum dolor</li>
+        <li>sit amet consectetur</li>
+        <li>adipisicing elit</li>
+    </ul>
+</body>
+
+</html>

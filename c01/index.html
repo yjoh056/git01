@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        body {
+            margin: 50px
+        }
+
+        /* tag selector */
+        /* p{
+            color: red;
+        } */
+
+        .red {
+            color: red;
+        }
+
+        /* id selector */
+        #menu {
+            color: #d3d3d3;
+        }
+
+        /* class selector */
+        .junsu {
+            color: green;
+        }
+
+        /* asterrisk */
+        * {
+            /* 초기화코드 */
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.75;
+            /* 글자크기의 1.75배 */
+            list-style: none;
+            /* lisr-style는 리스트 속성 적용 (축약형을 많이씀)*/
+            text-decoration: none;
+        }
+
+        /* 자손선택자 */
+        ul li {
+            font-size: 18px;
+            color: dodgerblue;
+        }
+
+        .tag {
+            background-color: yellow;
+            color: red;
+        }
+
+        li h3 {
+            background-color: grey;
+            color: #fff;
+        }
+
+        .selectIf {
+            margin-top: 30px;
+        }
+
+        .selectIf p::before {
+            content: "태그";
+            font-size: 13px;
+            background-color: aquamarine;
+        }
+
+        .box {
+            background-color: #fff;
+            color: #333;
+            margin-top: 30px;
+        }
+
+
+        .box h2:nth-of-type(1):hover~p {
+            background-color: antiquewhite;
+        }
+
+        .box h2:nth-of-type(1):hover {
+            border: 2px dashed lightgreen;
+        }
+
+        .box p:nth-child(2):hover+span {
+            color: hotpink;
+        }
+
+        li a {
+            font-size: 18px;
+            color: gray;
+        }
+
+        li a:hover {
+            color: whitesmoke;
+            background-color: palevioletred;
+        }
+
+        li a[title$="="] {
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        div {
+            margin-bottom: 50px;
+        }
+
+        div ul li::before {
+            content: '⭐';
+        }
+
+        ol li::before {
+            content: '❔';
+        }
+
+        div ul li::after {
+            content: '텍스트';
+            font-size: 10px;
+            color: white;
+            background: coral;
+            padding: 2px;
+        }
+
+        /* 가상선택자로 추가된 텍스트는 드래그되지않는다 */
+
+        .pointTb,
+        th,
+        td {
+            border: 1pt solid #d3d3d3;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+        h2{
+            margin-top: 30px;
+        }
+        h4{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>선택자</h1>
+    <!-- tag selector 태그선택자 -->
+    <h2>태그선택자</h2>
+    <p>자식선택자는 <span class="tag">태그&gt;태그</span> 로 표시한다. 인접선택자는 <span class="tag">태그+태그</span> 로 표시한다
+    </p>
+    <!-- id selector 아이디선택자 -->
+    <!-- u1#menu>li -->
+    <h2>아이디선택자 id=""</h2>
+    <ul>
+        <li id="menu">아이디 선택자</li>
+        <li>아이디는 중복x</li>
+        <li>아이디는 문서에 하나만</li>
+    </ul>
+    <!-- class selector 클래스선택자 -->
+    <!-- .junsu -->
+    <div class="junsu">
+
+    </div>
+    <!-- h1.junsu -->
+    <h2 class="junsu">클래스선택자 class=""</h2>
+    <div>
+        문서내 중복사용o / CSS에는 <span class="tag">.선택자이름</span> 으로 표시한다. 여러개를 중복으로 선택할시 <span class="tag">,</span>으로 구분한다.
+    </div>
+    <hr>
+    <ul>
+        <li>
+            <h3>하위선택자</h3>
+        </li>
+        <li>하위 선택자는 띄어쓰기로 표시한다</li>
+    </ul>
+    <div class="selectIf">
+        <h2>가상 선택자</h2>
+        <p>:hover</p>
+        <p>:active</p>
+        <p>:link</p>
+        <p>:visted</p>
+        <span>가상선택자 둘 이상 사용시 순서 중요</span>
+    </div>
+
+    <div class="box">
+        <h2>가상요소 선택자</h2>
+        <p>:nth-of-type(N)</p>
+        <span>같은 태그요소 중 N번째</span>
+        <p>:nth-child(N)</p>
+        <span>자식 태그요소 중 N번째</span>
+        <p>TAG:nth-of-type(N):hover+span:before</p>
+        <span>TAG 중 N번째에 hover시 형제요소인span의 앞부분</span>
+    </div>
+    <div>
+        <h2>속성 선택자</h2>
+        <p>[속성(기호)=”텍스트”]</p>
+        <ul>
+            <li><a href="#" title="캐럿^시작=">캐럿^시작=</a></li>
+            <li><a href="#" title="달러&끝=">달러&끝=</a></li>
+            <li><a href="#" title="애스터리스크*포함=">애스터리스크*포함=</a></li>
+            <li><a href="#" title="이퀄=일치=">이퀄=일치=</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>CSS Cascading</h2>
+        <p>문서 내의 </p>
+        <p><strong>선언 순서</strong></p>
+        <p>1.중요도</p>
+        <p>2.규칙의 출처</p>
+        <p>3.선언 순서</p>
+        <p>4.상속</p>
+        <p>5.외부스타일시트 우선</p>
+        <h4>li에 3가 적용 되었을때 어떤것으로 작성되는가?</h4>
+        <h5><span class="red">li{color:red}</span></h5>
+        <ol>
+            <li>&lt;head&gt;&lt;style&gt; <span class="red">li{color:green}</span></li>
+            <li>&lt;head&gt;&lt;link&gt;<span class="red">:import</span></li>
+            <li>03.css li{color:blue} <span class="red">:외부에서 가져온 CSS</span></li>
+        </ol>
+        <p>적용순서: red➡️green➡️blue>➡️ink</p>
+        <p><span class="red">If</span> 본문에 id(#pink)를 작성했다면 우선순위가 바뀜 pink로 나타남</p>
+        <p>!important 키워드 작성시 최우선</p>
+    </div>
+    <h3>적용순서별 우선순위</h3>
+    <table class="pointTb">
+        <tr>
+            <th colspan="3">우선순서 점수</th>
+        </tr>
+        <tr>
+            <td>아이디100</td>
+            <td>클래스10</td>
+            <td>태그1</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

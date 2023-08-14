@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            background-image: url(./img/bg_grid.png);
+            padding: 20px;
+        }
+
+        .bYellow {
+            background-color: rgba(255, 255, 0, 0.2);
+            font-size: 18px;
+            line-height: 18px;
+            padding: 10px;
+            width: 350px;
+            text-align: left;
+        }
+
+        .op {
+            background-color: rgb(255, 255, 0);
+            opacity: 0.5;
+            padding: 10px;
+        }
+        .repeat {
+            background-color: antiquewhite;
+            width: 400px;
+            padding: 80px;
+            background-image: url('./img/bg_flower.png');
+            background-repeat: no-repeat;
+        }
+        .posi p{
+            background-image: url(./img/bg_bullet.png);
+            background-repeat: no-repeat;
+            padding: 5px 5px 5px 10px;
+            background-position: 0 43%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>background</h1>
+    <div class="grid">
+        <p class="bYellow">글씨가 잘보이도록 배경의 알파값을 조정 한다 rgba(255, 255, 0, 0.2)</p>
+        <p class="op">opacity는 콘텐츠의 색까지 연하게 한다</p>
+    </div>
+    <div class="repeat">
+    <p><h3>background-repeat</h3>
+        배경으로 들어간 이미지는 스크린리더기에 읽히지않는다. 기본적으로 배경이미지는 왼쪽 위부터 반복된다. 하나만 적용하기 위해서는 반복을 끄는 background-repeat: no-repeat;을 쓴다. 
+    </p>
+    </div>
+    <div class="posi">
+        <h3>background-position</h3>
+        <p>왼쪽 정렬 표시방법</p>
+        <p>background-position: 0 50%;<br>
+            = background-position: left center;</p>
+    </div>
+</body>
+
+</html>

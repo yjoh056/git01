@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자의 단위</title>
+    <style>
+        html{
+            font-size: 24px;
+        }
+        ul{
+            font-size: 12px;
+        }
+        il{
+            /* em은 부모기준 1em=12px,0.5em=6 =18px */
+            font-size: 1.5em;
+        }
+        li:nth-child(4){
+            /* rem은 root가 기준
+            24pz + 12px = 36px */
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p>오늘의 진료는 본관에서 실시합니다.</p>
+
+    <ul>
+        <li>내과</li>
+        <li>이비인후과</li>
+        <li>정형외과</li>
+        <li>피부과</li>
+    </ul>
+</body>
+
+</html>

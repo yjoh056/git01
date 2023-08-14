@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        html {
+            margin-left: 5px;
+            border-left: 1px solid;
+        }
+
+        p {
+            width: 100px;
+            height: 100px;
+            background-color: burlywood;
+            padding: 8px;
+            box-sizing: border-box;
+            /* 애니메이션 이름 */
+            animation-name: mango;
+            /* 애니메이션 지속시간 */
+            animation-duration: 4s;
+            /* 애니메이션 종료 스타일 지정 */
+            animation-fill-mode: forwards;
+            /* 실행횟수 */
+            animation-iteration-count: infinite;
+            /* 애니메이션 방향 */
+            animation-direction: alternate;
+            /* 상태 */
+            animation-play-state: running;
+        }
+
+        .circle {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            border-radius: 50px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: ball 3s ease 1s infinite alternate;
+            box-sizing: border-box;
+
+        }
+
+        @keyframes ball {
+            0% {
+                transform: translate(1800px, 800px);
+            }
+
+            30% {
+                transform:translate(1400px, 200px)
+            }
+
+            70% {
+                transform: translate(1000px, 600px);
+            }
+
+            100% {
+                transform: (0px, 0px);
+            }
+        }
+
+        @keyframes mango {
+            0% {
+                background-color: green;
+                width: 150px;
+                transform: translate(0, 0);
+                color: white;
+            }
+
+            50% {
+                background-color: blue;
+                width: 50px;
+                transform: translate(5px, 100px) rotate(20deg);
+            }
+
+            100% {
+                background-color: yellow;
+                transform: translate(100px, 0px);
+            }
+        }
+
+        button:hover+p {
+            animation-play-state: paused;
+            animation: 3s;
+        }
+    </style>
+</head>
+
+<body>
+    <button>stop</button>
+    <p class="a">
+        Animation..
+    </p>
+    <div class="circle">one</div>
+</body>
+
+</html>

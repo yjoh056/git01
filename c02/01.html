@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font 스타일</title>
+    <style>
+        #box1 h2{
+            /* 글씨체 : serif 시스템의 글꼴 중 세리프체 아무거나-sans-serif와 글자 폭이 다르므로 반드시 써야함*/
+            font-family:'Times New Roman',Times,고딕,"맑은 고딕",serif; 
+            /* 글씨크기 1em=16px, em은 상대단위*/
+            font-size: 2em;
+            /* 글씨두께 기본nomal */
+            font-weight: normal;
+        }
+        #box1 p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #box2 h2{
+            font-style: italic;
+            color: red;
+        }
+        #box2 p{
+            font-variant: small-caps;
+            color: #366333;
+        }
+        #box3 h2{
+            font: 3em Arial;
+        }
+        #box3 p{
+            font: small-caps 30px "Times New Roman";
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+		<h2>font-family, font-size, font-weight</h2>
+		<p>Well done is better than well said.</p>
+	</div>
+	<div id="box2">
+		<h2>font-style, font-variant, color</h2>
+		<p>Seeing much, suffering much, and studying much, are the three pillars of learning. </p>
+	</div>
+	<div id="box3">
+		<h2>font</h2>
+		<p>Education is a progressive discovery of our own ignorance. </p>
+	</div>
+</body>
+</html>

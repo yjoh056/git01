@@ -1,0 +1,13 @@
+/* 부모한테 선언하면 자식이 배치됨=1단상속 */
+/* 부모는 컨테이너박스, 자식은 아이템박스 */
+.container{
+  display: flex;
+}
+#opt1 .box:nth-child(1){
+  display: flex;
+}
+/* flex 방향설정(기본값 row) */
+#opt1 {flex-direction: row;} /* 좌->우 */
+#opt2 {flex-direction: row-reverse;} /* 우->좌 */
+#opt3 {flex-direction: column;} /* 상 -> 하 */
+#opt4 {flex-direction: column-reverse;} /* 하 -> 상 */
