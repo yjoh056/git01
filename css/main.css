@@ -1,128 +1,199 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
 
-/* //reset */
-body {
-    font-size: 16px;
-    letter-spacing: -0.5px;
-    color: #333;
-    background-color: antiquewhite;
-    margin: 50px;
-    padding: 15px;
-}
+    html {
+        overflow-y: scroll;
+    }
 
-ul,
-ol,
-li {
-    list-style: none;
-}
+    body {
+        font-size: 16px;
+        letter-spacing: -0.5px;
+    }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    padding: 3px;
-}
+    ul,
+    ol,
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+    }
+
+    /* // reset */
+    body {
+        background-color: antiquewhite;
+    }
 
 
-h1 {
-    color: black;
-    font-size: 60px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-}
 
-h2 {
-    color: midnightblue;
-    font-size: 40px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-    margin-right: 5px;
-}
+    a {
+        padding: 3px;
+    }
 
-li {
-    padding: 5pt 0pt;
-    list-style: square;
-}
 
-li a {
-    vertical-align: baseline;
-    line-height: 20pt;
-}
+    h1 {
+        color: black;
+        font-size: 60px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 
-span,
-iframe {
-    padding-left: 20px;
-    line-height: 2em;
-}
+    h2 {
+        color: midnightblue;
+        font-size: 40px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
 
-div {
-    margin: auto;
-}
+    li {
+        padding: 5pt 0pt;
+        list-style: square;
+    }
 
-.feild {
+    li a {
+        vertical-align: baseline;
+        line-height: 20pt;
+    }
+
+    span,
+    iframe {
+        padding-left: 20px;
+        line-height: 2em;
+    }
+
+    div {
+        margin: auto;
+    }
+
+    div.window {
+        background: url(../c05/img/bg_grid.png), #fffdfd;
+        width: 800px;
+        margin: auto;
+        padding-bottom: 10px;
+        border: 1px solid #bcbcbc;
+    }
+
+    div.topMenu1 {
+        background-color: #1E1E1E;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 15px;
+        font-size: 1.5em;
+        display: block;
+    }
+
+    div.topMenu1 span {
+        padding: 8px;
+        box-sizing: border-box;
+        border-left: 1px solid #bcbcbc;
+    }
+
+    .topMenu1 .title {
+        width: 200px;
+        height: 50px;
+        background-color: #fff;
+        margin-top: 9px;
+        padding: 12px 10px;
+        box-sizing: border-box;
+        font-size: 0.8em;
+        border: 1px solid #ffffff;
+    }
+
+    .menuBar {
+        float: inline-start;
+        height: 60px;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropDown {
+        width: 50px;
+        height: 50px;
+        padding: 20px;
+        line-height: 58px;
+        box-sizing: border-box;
+        font-weight: 500;
+    }
+
+    .dropDown:hover {
+        content: '📪';
+    }
+
+    .dropDown:visited {
+        content: '📬';
+    }
+
+    .htmlN :hover {
+        background-color: darksalmon;
+        color: white;
+        font-weight: 700;
+    }
+
+    .cssN :hover {
+        background-color: deepskyblue;
+        color: aliceblue;
+        font-weight: 700;
+    }
+
+
+    .HWtab {
+        background-color: cornsilk;
+        width: 100%;
+        padding: 20px;
+        margin: 10px;
+        text-align: left;
+        letter-spacing: 0;
+    }
+
+    .HWtab th,
+    td {
+        height: 32px;
+        width: 35%;
+    }
+
+    .HWtab a:hover {
+        background-color: aquamarine;
+        font-size: 150%
+    }
+
+    .top,
+    .top2,
+    .work {
+        display: block;
+        width: 700px;
+    }
+
+    .note {
+        display: flex;
+        width: 40%;
+    }
+
+    .daily {
+        width: 700px;
+    }
+
+    .butt {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .feild {
     width: 500px;
     border-width: 2px;
     border-style: groove;
     border-color: rgb(192, 192, 192);
     border-image: initial;
     padding: 50px;
-    margin: 10px;
+    margin: 30px;
     box-sizing: border-box;
-}
-
-.htmlN :hover {
-    background-color: darksalmon;
-    color: white;
-    font-weight: 700;
-}
-
-.cssN :hover {
-    background-color: deepskyblue;
-    color: aliceblue;
-    font-weight: 700;
-}
-
-
-.HWtab {
-    background-color: cornsilk;
-    width: 100%;
-    padding: 20px;
-    margin: 10px;
-    text-align: left;
-    letter-spacing: 0;
-}
-
-.HWtab th,
-td {
-    height: 32px;
-    width: 35%;
-}
-
-.HWtab a:hover {
-    background-color: aquamarine;
-    font-size:150%
-}
-
-.top,
-.top2,
-.work {
-    display: block;
-    width: 700px;
-}
-
-.note {
-    display: flex;
-    width: 40%;
-}
-.daily{
-    width: 700px;
-}
-.butt{
-    width: fit-content;
-    margin: auto;
 }
