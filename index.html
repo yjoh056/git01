@@ -1,12 +1,254 @@
-
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>git시작하기</title>
+    <title>오예주 일기장</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./font/font.css">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        html {
+            overflow-y: scroll;
+        }
+
+        body {
+            font-size: 16px;
+            letter-spacing: -0.5px;
+            color: #333
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* // reset */
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        div.window {
+            background: url(./c05/img/bg_grid.png), #fffdfd;
+            width: 800px;
+            margin: auto;
+            padding-bottom: 10px;
+            border: 1px solid #bcbcbc;
+        }
+
+        div.topMenu1 {
+            background-color: #1E1E1E;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 15px;
+            font-size: 1.5em;
+            display: block;
+        }
+
+        div.topMenu1 span {
+            padding: 8px;
+            box-sizing: border-box;
+            border-left: 1px solid #bcbcbc;
+        }
+
+        .topMenu1 .title {
+            width: 200px;
+            height: 50px;
+            background-color: #fff;
+            margin-top: 9px;
+            padding: 12px 10px;
+            box-sizing: border-box;
+            font-size: 0.8em;
+            border: 1px solid #ffffff;
+        }
+
+        .menuBar {
+            float: inline-start;
+            height: 60px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropDown {
+            width: 50px;
+            height: 50px;
+            padding: 20px;
+            line-height: 58px;
+            box-sizing: border-box;
+            font-weight: 500;
+            padding: 10px;
+        }
+
+        .dropDown a:hover .menuDown {
+            content: '📪';
+        }
+
+        .dropDown a:visited .menuDown{
+            content: '📬';
+        }
+    </style>
 </head>
+
 <body>
-    <h1>git start</h1>
+    <header>
+        <div class="window">
+            <div class="topMenu1">
+                <span><a href="https://mango2.notion.site/UI-UX-C-82941a9ba121491abd2734427ef7949a" title="1005호 Notion"
+                        target="_blank">💻</a></span>
+                <span><a href="https://mango2.notion.site/27dcd9ee529f45fabb3142883971790a?v=c81babc5aab649958d0436ae8b38b947"
+                        title="교안" target="_blank">📔</a></span>
+                <a href="http://yj056.dothome.co.kr"><span class="title">✏️ 오예주 일기장</span></a>
+            </div>
+            <div class="menuBar">
+                <a href="#"><span class="dropDown">📫</span></a>
+            </div>
+    </header>
+        <!-- new -->
+        <div class="top">
+            <h1>오예주 일기장✏️</h1>
+            <span class="black">매일 매일 꾸준히 하기!╰(*°▽°*)╯</span>
+            <span class="nomal">✔️css코드작성시 꼭 상단에 작성하기</span><br>
+            <iframe src="caption.html" width="600"></iframe>
+        </div>
+        <div class="top2">
+            <h2>수업</h2>
+            <span class="black">HTML 오늘부터 시작. </span><a href="./src/index.html" target="_self"><span class="light">차은우
+                    불러오기</span></a>
+        </div>
+        <div class="work">
+            <h2>과제</h2>
+            <table class="HWtab">
+                <tr>
+                    <th>date</th>
+                    <th>result</th>
+                </tr>
+                <tr>
+                    <td>714</td>
+                    <td><a href="./path/web/img/index.html" target="_self">🎖️</a></td>
+                </tr>
+                <!-- tr1 -->
+                <tr>
+                    <td>719</td>
+                    <td><a href="./05/quiz1.html">🎖️</a></td>
+                </tr>
+                <!-- tr2 -->
+                <tr>
+                    <td>721 과제</td>
+                    <td><a href="./06/quiz1.html">🎖️</a>/<a href="./06/quiz2.html">🎖️</a></td>
+                </tr>
+                <!-- tr3 -->
+                <tr>
+                    <td>0721 팀과제</td>
+                    <td><a href="./team/index.html">🎖️</a></td>
+                </tr>
+                <!-- tr4 -->
+                <tr>
+                    <td>0724 과제</td>
+                    <td><a href="./06/quiz3.html" target="_blank">🎖️</a>/
+                        <a href="./06/p_quiz1.html" target="_blank">🎖️</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0727 Icon&Logo</td>
+                    <td><a href="./icon/icon.html">🎖️</a>/<a href="./icon/logo.html">🎖️</a></td>
+                </tr>
+                <tr>
+                    <td>0731 형성평가(c01)</td>
+                    <td><a href="./c01/test4.html">🎖️</a>/<a href="./c01/test5.html">🎖️</a></td>
+                </tr>
+                <tr>
+                    <td>0802 형성퀴즈(c02)</td>
+                    <td><a href="./c02/qz1.html">🎖️</a>/<a href="./c02/qz2.html">🎖️</a>
+                </tr>
+                <tr>
+                    <td>0803 형성퀴즈(c03)</td>
+                    <td><a href="./c03/qz1.html">🎖️</a></td>
+                </tr>
+                <tr>
+                    <td>0804 형성퀴즈(c04)</td>
+                    <td><a href="./c04/qz1.html">🎖️</a></td>
+                </tr>
+            </table>
+        </div>
+        <!-- //과제 -->
+
+        <div class="daily note">
+            <h2>일기장</h2>
+            <fieldset class="feild">
+                <legend>
+                    <h3>HTML</h3>
+                </legend>
+                <ul class="htmlN">
+                    <li class="bold"><a href="./03/index.html">
+                            Markup,BlockLevel</a></li>
+                    <li class="bold"><a href="./04/index.html">
+                            Blockquote/CSS</a></li>
+                    <li class="bold">형성평가<a href="./04/quiz2.html">
+                            TextTag</a></li>
+                    <li class="bold"><a href="./05/index.html">
+                            ImageMap,Name</a></li>
+                    <li class="bold"><a href="./06/index.html">
+                            Table,Input</a></li>
+                    <li class="bold"><a href="./06/0721.html">
+                            Fieldset, Textarea, Select, Label</a></li>
+                    <li class="bold"><a href="./06/formTotal.html">
+                            Form all</a></li>
+                    <li class="bold"><a href="./07/index.html">
+                            Media</a></li>
+                </ul>
+            </fieldset>
+            <fieldset class="feild">
+                <legend>
+                    <h3>CSS</h3>
+                </legend>
+                <ul class="cssN">
+                    <li class="bold"><a href="./c01/index.html">선택자</a></li>
+                    <li class="bold"><a href="./c01/13.html">상속관계</a></li>
+                    <li class="bold"><a href="./c06/study1.html">float</a></li>
+                    <li class="bold"><a href="./newCre/01.html">mycard</a></li>
+                    <li class="blod"><a href="./newCre/02.html">flex-layout</a></li>
+                </ul>
+            </fieldset>
+        </div>
+        <!-- //CSS -->
+        <footer>
+            <p class="butt"><a
+                    href="https://magic-nail-d05.notion.site/UI-UX-web-class-230705-a5d1dc0c8a314854bbdf4a2d97c90999?pvs=4"
+                    target="_blank"><img src="./img-test/images/download.png" alt="노션 필기장" width="300"></a></p>
+        </footer>
+    </div>
 </body>
+
 </html>

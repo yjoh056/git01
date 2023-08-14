@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* //reset */
+body {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    color: #333;
+    background-color: antiquewhite;
+    margin: 50px;
+    padding: 15px;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding: 3px;
+}
+
+
+h1 {
+    color: black;
+    font-size: 60px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: midnightblue;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+li {
+    padding: 5pt 0pt;
+    list-style: square;
+}
+
+li a {
+    vertical-align: baseline;
+    line-height: 20pt;
+}
+
+span,
+iframe {
+    padding-left: 20px;
+    line-height: 2em;
+}
+
+div {
+    margin: auto;
+}
+
+.feild {
+    width: 500px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    border-image: initial;
+    padding: 50px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.htmlN :hover {
+    background-color: darksalmon;
+    color: white;
+    font-weight: 700;
+}
+
+.cssN :hover {
+    background-color: deepskyblue;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+
+.HWtab {
+    background-color: cornsilk;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    letter-spacing: 0;
+}
+
+.HWtab th,
+td {
+    height: 32px;
+    width: 35%;
+}
+
+.HWtab a:hover {
+    background-color: aquamarine;
+    font-size:150%
+}
+
+.top,
+.top2,
+.work {
+    display: block;
+    width: 700px;
+}
+
+.note {
+    display: flex;
+    width: 40%;
+}
+.daily{
+    width: 700px;
+}
+.butt{
+    width: fit-content;
+    margin: auto;
+}
