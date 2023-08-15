@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration-color: none;
+    text-decoration: none;
 }
 
 body {
@@ -18,6 +20,11 @@ header {
     background-color: #f8f8f8;
     align-items: center;
     margin-bottom: auto;
+    color: black;
+}
+
+header a {
+    color: #333;
 }
 
 #sitemap {
@@ -51,28 +58,27 @@ header {
 
 
 .nav {
-    min-width: 200px;
+    min-width: 300px;
     padding: 30px;
+    padding-top: 5%;
     box-sizing: border-box;
     margin-right: auto;
-    flex: 0;
-    /* flex: 1 1 0 */
     background-color: #ececec;
     text-align: center;
+    font-size: 18px;
+    line-height: 50px;
 }
 
-
-.nav li {
-    font-size: 24px;
-    font-weight: 700px;
+li li {
+    line-height: 20px;
 }
 
-.nav li::before{
-    content: '🔹';
+.step1 li:before {
+    content: '↳ :';
 }
 
 .nav a {
-    font-size: 18px;
+    font-size: 24px;
     color: #333;
     text-decoration: none;
 }
@@ -82,7 +88,6 @@ header {
     flex-direction: column;
     margin: 30px;
     flex: auto;
-    overflow-y: scroll;
     padding: 50px;
     align-items: center;
     justify-content: center;
@@ -92,23 +97,39 @@ img {
     max-width: 800px;
 }
 
+.content h2 {
+    text-align: left;
+    font-size: 3em;
+}
+
 .txtBox {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    max-width: 800px;
-    line-height: 30px;
-    font-size: 18px;
+    width: 90%;
+    line-height: 1.75em;
+    font-size: 1em;
+    background-color: #f8f8f8;
 }
 
-.txt1 {
-    width: 400px;
-    height: auto;
+.txtBox2 {
+    width: 90%;
+    line-height: 1.75em;
+    font-size: 1em;
 }
 
-.txt2 {
-    width: 400px;
-    height: auto;
+.txtBox2>h3 {
+    margin-top: 20px;
+}
+
+.txtBox>th {
+    width: 15%;
+    vertical-align: top;
+    text-align: right;
+    padding: 10px;
+    border-right: 1px solid #333;
+}
+
+.txtBox td {
+    padding: 10px;
+    border-top: 1px dashed gray;
 }
 
 footer {

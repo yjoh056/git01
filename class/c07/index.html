@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상대단위</title>
+    <style>
+        #em_1 {
+            font-size: 1em;
+        }
+
+        .px_1 {
+            font-size: 16px;
+        }
+
+        .em_2 {
+            font-size: 2em;
+        }
+
+
+
+        .rem1{
+            font-size: 1rem;
+        }
+
+        .rem2{
+            font-size: 2rem;
+        }
+
+        .rem3{
+            font-size: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>상대단위</h1>
+    <hr>
+    <div class="em">
+        <h2>1em=16px</h2>
+        <p id="em_1">대문자 M의 너비를 기준으로 한 단위 <br> <span class="px_1">1em = 약 16px</span></p>
+        <p class="em_2">em은 부모기준<span>2em = 32px</span></p>
+    </div>
+    <hr>
+    <div class="rem">
+        <h2> rem은 root기준(절대좌표)</h2>
+        <p><div class="rem1">1rem=16px</div></p>
+        <p><span class="rem3">3rem=48px</span></p>
+        <p><span class="rem2">2rem =32px</span></p>
+    </div>
+</body>
+
+</html>
