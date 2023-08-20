@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration-color: none;
     text-decoration: none;
 }
 
@@ -69,6 +68,10 @@ header a {
     line-height: 50px;
 }
 
+ol li {
+    margin-left: 1rem;
+}
+
 li li {
     line-height: 20px;
 }
@@ -107,19 +110,21 @@ img {
     line-height: 1.75em;
     font-size: 1em;
     background-color: #f8f8f8;
+    margin-bottom: 2rem;
 }
 
 .txtBox2 {
     width: 90%;
     line-height: 1.75em;
     font-size: 1em;
+    margin-bottom: 2rem;
 }
 
 .txtBox2>h3 {
     margin-top: 20px;
 }
 
-.txtBox>th {
+th {
     width: 15%;
     vertical-align: top;
     text-align: right;
@@ -127,9 +132,18 @@ img {
     border-right: 1px solid #333;
 }
 
-.txtBox td {
+td {
     padding: 10px;
     border-top: 1px dashed gray;
+}
+
+.txtBox3 {
+    width: 90%;
+    line-height: 1.75em;
+    margin-bottom: 2rem;
+}
+
+.txtBox3 ol ol{margin-left: 1rem;
 }
 
 footer {

@@ -1,0 +1,53 @@
+.wrap {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+}
+
+.contanier {
+    max-width: 120rem;
+    width: 100%;
+    margin: auto;
+    height: inherit;
+    background: #ddd;
+}
+
+.utility {
+    height: 5rem;
+}
+
+nav {
+    height: 9.3rem;
+}
+
+.banner_hero {
+    width: 100%;
+    height: 100rem;
+}
+
+.contents1 {
+    width: 100%;
+    height: 80rem;
+}
+
+.contents2 {
+    height: 90rem;
+}
+
+.contents3 {
+    height: 80rem;
+}
+
+.contents4 {
+    height: 10rem;
+}
+
+.contents5 {
+    height: 30rem;
+}
+
+footer {
+    height: 10rem;
+}

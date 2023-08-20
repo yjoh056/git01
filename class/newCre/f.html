@@ -24,8 +24,8 @@
                 <li class="step1"><a href="f.html"><strong>float</strong></a>
                     <ul>
                         <li>none</li>
-                        <li>left</a></li>
-                        <li>right</a></li>
+                        <li>left</li>
+                        <li>right</li>
                     </ul>
                 </li>
                 <li class="step1"><a href="p.html"><strong>position</strong></a>
@@ -49,43 +49,76 @@
         <!-- //nav -->
         <div class="content">
             <h2>float</h2>
+            <img src="https://images.ctfassets.net/e43mbx7oxv8s/dTeQVZbR72uiYkEAYKyUS/bd3825a93aace2c7b368a7a742b1000f/000122_ZV_SCSW_HeroImages_1900x1024_D1.jpg"
+                alt="cats">
             <table class="txtBox">
-                <tr>
-                    <p>
-                        <img src="https://images.ctfassets.net/e43mbx7oxv8s/dTeQVZbR72uiYkEAYKyUS/bd3825a93aace2c7b368a7a742b1000f/000122_ZV_SCSW_HeroImages_1900x1024_D1.jpg"
-                            alt="cats" width="100%">
-                    </p>
-                </tr>
                 <tr>
                     <th rowspan="2">Float</th>
                     <td colspan="2">
-                         속성
+                        한 요소(element)가 보통 흐름(normal flow)으로부터 빠져 텍스트 및 인라인(inline) 요소가 그 주위를 감싸는 자기 컨테이너의 좌우측을 따라 배치되어야
+                        함을 지정
                     </td>
                 </tr>
                 <tr>
-                    <th>값</th>
+                    <th>주의점</th>
                     <td>
-                        <strong>static | reative | absoulute | fixed | sticky</strong><br>
-                        (기본 | 상대좌표 | 절대좌표 | 고정좌표 | 스티키)
+                        <ol type="1">
+                            <li>1.상속X</li>
+                            <li>2.동위의 형제요소에 적용됨</li>
+                            <li>3.float 은 해제 하지 않으면 다음 요소의 배치가 틀어짐.<strong>반드시 해체</strong>
+                                <ol type="a">
+                                    <li>a. float:left 를 사용 했을때 clear:left 해제</li>
+                                    <li>b. float:right 를 사용 했을때 clear:right 해제</li>
+                                    <li>c. clear:both 양쪽방향 모두 해제</li>
+                                </ol>
+                            </li>
+                        </ol>
                     </td>
                 </tr>
             </table>
             <div class="txtBox2">
-                <h3>사용가능 속성</h3>
-                <p>1. <strong>static</strong> : 기본</p>
-                <p>2. <strong>relative</strong> : 상대좌표 → 자기 자신의 좌측상단</p>
-                <p>3. <strong>absolute</strong> : 절대좌표 → 브라우저 좌측상단</p>
-                <p>4. <strong>sticky</strong> : [스크롤시 고정](https://github.com/w3c/csswg-drafts/issues/865)</p>
-                <p>5. <strong>fixed</strong> : 고정</p>
-                <h3>위치값 지정</h3>
-                <p>1. top, left, right, bottom</p>
-                <p>2. z-index 로 깊이지정 (z-index 는 값이 클수록 먼저보임)</p>
+                <h3>키워드 값</h3>
+                <p>1. float: <strong>left;</strong>: 요소가 자신의 포함(containing) 블록의 좌측에 부동(float, 떠움직여)</p>
+                <p>2. float: <strong>right;</strong> : 요소가 자신의 포함 블록의 우측에 부동해야 함</p>
+                <p>3. float: <strong>none;</strong> : 요소가 부동하지 않아야 함</p>
+                <p>4. float: <strong>inline-start;</strong> : 요소가 자신의 포함 블록의 시작쪽에 부동해야 함 =ltr(left to right) 스크립트 상에서 왼쪽
+                    그리고 rtl(right to left) 스크립트 상에서는 오른쪽.</p>
+                <p>5. float: <strong>inline-end;</strong> : 요소가 자신의 포함 블록의 끝쪽에 부동해야 함 = ltr 스크립트 상에서 오른쪽 그리고 rtl 스크립트
+                    상에서는 왼쪽.</p>
             </div>
+            <div class="txtBox3">
+                <h3>clearfix</h3>
+                <h4>부모 자식 간 float 해체하기</h4>
+                <ul>
+                    <li>1.부모 요소에 width, height 지정
+                        <ol>
+                            <li>- 부모의 크기가 가변적으로 변형안됨</li>
+                            <li>- min-,max-는 가변속성</li>
+                        </ol>
+                    </li>
+                    <li>2.float 된 자식 요소의 마지막에 빈 요소를 추가하고 clear:both 를 줌 *코드가 길어짐</li>
+                    <li>3.부모요소에 :after 를 추가하고 clear 적용 *부모마다 적용해야함
+                        <pre style="color: blue;"> .부모요소::after{content:''; clear: both; display: block;}
+                        </pre>
+                    </li>
+                    <li>4.clear 속성을 가진 전용 클래스(cf)를 선언하고 해당 요소에 적용
+                        <pre style="color: blue;"> p{float:left}
+ .cf::after{content: ''; clear: both; display: block;}
+                        </pre>
+                    </li>
+                    <li>5.부모에 overflow 적용 *세로 스크롤이 있는 박스에는 사용 불가
+                        <pre style="color: blue;"> .mydrink{overflow:auto;}</pre>
+                    </li>
+                    <li>6.float 된 요소의 형제를 float 시킴</li>
+                </ul>
+            </div>
+            <p>자식이 float속성을 가졌을때 부모의 콘텐츠로 인식이 안되서 속하지 못해 오류남</p>
+            <p>반응형에서 문제가 큼(반응형웹은 wrap이 잘되어있어야한다.)</p>
+            <p>코드의 양은 트래픽양에도 영향을 미친다.</p>
         </div>
         <!-- //content -->
     </div>
     <!-- //contaner -->
-    </div>
     <footer>footer</footer>
 </body>
 
