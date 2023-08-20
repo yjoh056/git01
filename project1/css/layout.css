@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     background: #f2f2f2;
+    text-align: center;
 }
 
 .contanier {
@@ -12,14 +13,48 @@
     margin: auto;
     height: inherit;
     background: #ddd;
+    text-align: center;
 }
 
 .utility {
     height: 5rem;
+
+}
+
+.utility li {
+    display: inline;
+    line-height: 5rem;
 }
 
 nav {
-    height: 9.3rem;
+    height: 9rem;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 1rem;
+    line-height: 9rem;
+}
+
+.sitemap {
+    position: absolute;
+    right: 1rem;
+    line-height: 9rem;
+}
+
+nav .contanier {
+    position: relative;
+}
+
+nav .contanier ul {
+    position: absolute;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    line-height: 9rem;
 }
 
 .banner_hero {

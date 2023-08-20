@@ -104,22 +104,49 @@ div {
 }
 
 .HWtab th,
-td {
+.HWtab td,
+.project td {
     padding: 1.5rem;
     height: 32px;
     width: 35%;
 }
 
+
 .HWtab a:hover {
     background-color: aquamarine;
-    font-size: 110%;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .container {
     width: 90%;
     margin: auto;
 
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.work .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.project {
+    background-color: bisque;
+    margin-left: 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.project a:hover {
+    background-color: rgb(255, 145, 20);
+    font-weight: 700;
 }
 
 .note {
@@ -132,12 +159,11 @@ td {
 }
 
 .feild {
-    width: 500px;
+    width: 100%;
     border-width: 2px;
     border-style: groove;
     border-color: rgb(192, 192, 192);
     border-image: initial;
     padding: 50px;
-    margin: 30px;
-    box-sizing: border-box;
+    margin: auto
 }
