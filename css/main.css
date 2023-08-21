@@ -1,5 +1,5 @@
 a {
-    padding: 3px;
+    padding: 2px;
 }
 
 
@@ -142,11 +142,12 @@ div {
     margin-left: 1rem;
     font-size: 2rem;
     line-height: 2rem;
+    padding: 1rem;
 }
 
 .project a:hover {
     background-color: rgb(255, 145, 20);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .note {
