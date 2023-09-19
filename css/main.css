@@ -3,8 +3,6 @@ a {
 }
 
 
-
-
 li {
     padding: 5pt 0pt;
 }
@@ -96,18 +94,19 @@ div {
 
 
 .HWtab {
-    background-color: cornsilk;
+    background-color: rgb(239, 251, 255);
     width: 50%;
-    text-align: center;
+    text-align: justify;
     letter-spacing: 0;
     padding: 1rem;
+    margin: 1rem;
 }
 
 .HWtab th,
 .HWtab td,
 .project td {
     padding: 1.5rem;
-    height: 32px;
+    height: 15px;
     width: 35%;
 }
 
@@ -116,6 +115,15 @@ div {
     background-color: aquamarine;
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+.top>.container {
+    display: flex;
+}
+
+.top>.container li {
+    list-style: none;
+    margin-left: -2rem;
 }
 
 .container {
@@ -135,18 +143,35 @@ div {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .project {
-    background-color: bisque;
-    margin-left: 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2rem;
-    padding: 1rem;
+    margin: 3rem 0;
+}
+
+.project ul{
+    margin: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.project li {
+
+    margin: 1rem;
+    list-style: none;
+}
+
+.project li a {
+    padding: 1rem 2rem;
+    border: 1px solid;
+    border-radius: 30px;
 }
 
 .project a:hover {
-    background-color: rgb(255, 145, 20);
+    background-color: rgb(130, 220, 255);
     font-weight: 500;
 }
 
